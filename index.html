@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackky's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="font-sans bg-gray-100">
+  
+  <!-- Header Section -->
+  <header class="bg-blue-500 shadow">
+    <div class="container mx-auto flex justify-between items-center py-6 px-4">
+      <div class="text-3xl font-bold">BLACKKY</div>
+      <nav class="space-x-4">
+        <a href="#" class="text-gray-900 hover:text-white font-semibold">Home</a>
+        <a href="#projects" class="text-gray-900 hover:text-white font-semibold">Projects</a>
+        <a href="#contact" class="text-gray-900 hover:text-white font-semibold">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-screen flex items-center justify-center rounded-lg" style="background-image: url(images/hero.png); ">
+    <div class="text-center text-white px-4">
+      <h1 class="text-5xl font-bold mb-4">Hi, I'm Lord Blackky</h1>
+      <div class="bg-blue-800 rounded-lg p-2">
+        <p class="text-xl">A Product designer and Full-stack Developer passionate about creating amazing user experiences</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Skills</h2>
+      <div class="flex flex-wrap justify-center gap-8 md:space-y-0 space-x-0">
+        <div><a href="#">
+        <div class="bg-blue-500 hover:bg-white p-6 rounded-lg shadow-lg w-40 text-center">
+          <h3 class="text-xl font-semibold">HTML</h3>
+        </div></a></div>
+        <div><a href="#">
+        <div class="bg-blue-500 hover:bg-white p-6 rounded-lg shadow-lg w-40 text-center">
+          <h3 class="text-xl font-semibold">CSS</h3>
+        </div></a></div>
+        <div><a href="#">
+        <div class="bg-blue-500 hover:bg-white p-6 rounded-lg shadow-lg w-40 text-center">
+          <h3 class="text-xl font-semibold">JavaScript</h3>
+        </div></a></div>
+        <div><a href="#">
+        <div class="bg-blue-500 hover:bg-white p-6 rounded-lg shadow-lg w-40 text-center">
+          <h3 class="text-xl font-semibold">UI/UX</h3>
+        </div></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-12 bg-gray-200">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="images/Netflix sliced.jpg" alt="Project Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Netflix Web Interface</h3>
+            <p class="text-gray-700">This is a Netflix user interface that was done using figma. It shows all the different interactions such as hover, enlarged screen amongst others.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="images/Group 53.png" alt="Project Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">World Clock and Alarm</h3>
+            <p class="text-gray-700">This is a web app for the design of a world clock and alarm. It covers a whole lot of territories and countries. It was designed first with figma, and then with html5.</p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="images/Fashion page sliced.jpg" alt="Project Image" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Fashion Shop Website</h3>
+            <p class="text-gray-700">This is a website for a fashion shop which was was designed to cater for fashion needs of women. The user interface was first designed using figma, and then the web was done using html, css and JavaScript.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+      <form class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+          <input type="text" id="name" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+          <input type="email" id="email" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+          <textarea id="message" rows="4" class="w-full border-gray-300 rounded-lg shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <div>&copy; 2024 Blackky. All rights reserved.</div>
+      <div class="flex space-x-4">
+        <a href="#"><img src="images/facebook icon.png" alt="facebook"></a>
+        <a href="#"><img src="images/Xtwitter icon.png" alt="twitter"></a>
+        <a href="#"><img src="images/linkedIn icon.png" alt="LinkedIn"></a>
+        
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
